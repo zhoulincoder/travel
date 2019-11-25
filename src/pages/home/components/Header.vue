@@ -9,7 +9,7 @@
       输入景点旅游
     </div>
     <div class="header-right">
-      城市<span class="iconfont arrow-icon">&#xe64a;</span>
+      {{city}}<span class="iconfont arrow-icon">&#xe64a;</span>
     </div>
     <div class="test"></div>
   </div>
@@ -18,7 +18,10 @@
 <script>
 // 1rem = 50 px
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  props: {
+    city: String
+  }
 };
 </script>
 
