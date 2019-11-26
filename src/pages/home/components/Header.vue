@@ -8,9 +8,11 @@
       <span class="iconfont">&#xe632;</span>
       输入景点旅游
     </div>
-    <div class="header-right">
-      {{city}}<span class="iconfont arrow-icon">&#xe64a;</span>
-    </div>
+    <router-link to="/city">
+      <div class="header-right">
+        {{city}}<span class="iconfont arrow-icon">&#xe64a;</span>
+      </div>
+    </router-link>
     <div class="test"></div>
   </div>
 </template>
@@ -29,7 +31,7 @@ export default {
   @import '~styles/varibles.styl'
   .header
     display flex
-    line-height .86rem
+    line-height $headerHeight
     background-color $bgColor
     color #fff
     .header-left
@@ -52,6 +54,7 @@ export default {
       width 1.24rem
       float right
       text-align center
+      color #ffffff
       .arrow-icon
         margin-left .04rem
         font-size .24rem
