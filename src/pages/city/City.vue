@@ -34,16 +34,16 @@ export default {
         .then(this.handleGetCityInfoSucc)
     },
     handleGetCityInfoSucc (res) {
-      console.log(res);
+      console.log(res)
       res = res.data
-      if(res.ret && res.data) {
+      if (res.ret && res.data) {
         const data = res.data
         this.cities = data.cities
         this.hotCities = data.hotCities
       }
     },
     handleLetterChange (letter) {
-      console.log(letter);
+      console.log(letter)
       this.letter = letter
     }
   },

@@ -9,7 +9,7 @@
           <p class="item-desc">{{item.desc}}</p>
           <button class="item-button">查看详情</button>
         </div>
-       
+
       </li>
     </ul>
   </div>
@@ -48,7 +48,7 @@ export default {
       padding: .1rem
       min-width 0
       .item-title
-        
+
         line-height 0.54rem
         font-size .32rem
       .item-desc
@@ -59,9 +59,8 @@ export default {
         line-height .44rem
         padding 0 .2rem
         border-radius .06rem
-        margin-top .16rem  
+        margin-top .16rem
         background #ff9300
         color #ffffff
-
 
 </style>

@@ -22,7 +22,7 @@ export default {
   data () {
     return {
       swiperOption: {
-       autoplay: false
+        autoplay: false
       }
     }
   },
@@ -31,7 +31,7 @@ export default {
       const pages = []
       this.list.forEach((item, index) => {
         const page = Math.floor(index / 8) // 图片显示的页码
-        if(!pages[page]) {
+        if (!pages[page]) {
           pages[page] = []
         }
         pages[page].push(item)
@@ -68,7 +68,7 @@ export default {
         padding .1rem
         .icon-img-content
           display block
-          margin 0 auto 
+          margin 0 auto
           height 100%
       .icon-desc
         ellipsis()

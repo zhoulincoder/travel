@@ -21,13 +21,13 @@
 import Bscroll from 'better-scroll'
 import { mapMutations } from 'vuex'
 export default {
-  name: "CitySearch",
-  data() {
+  name: 'CitySearch',
+  data () {
     return {
-      keyword: "",
+      keyword: '',
       list: [],
       timer: null
-    };
+    }
   },
   props: {
     cities: Object
@@ -47,34 +47,34 @@ export default {
     ...mapMutations(['changeCity'])
   },
   watch: {
-    keyword() {
+    keyword () {
       if (this.timer) {
-        clearTimeout(this.timer);
+        clearTimeout(this.timer)
       }
       if (this.keyword) {
         this.timer = setTimeout(() => {
-          const result = [];
+          const result = []
           for (let i in this.cities) {
             this.cities[i].forEach(value => {
               if (
                 value.spell.indexOf(this.keyword) > -1 ||
                 value.name.indexOf(this.keyword) > -1
               ) {
-                result.push(value);
+                result.push(value)
               }
-            });
+            })
           }
-          this.list = result;
-        }, 100);
+          this.list = result
+        }, 100)
       } else {
         this.list = []
       }
     }
   },
-  mounted() {
-    this.scroll = new Bscroll(this.$refs.search);
+  mounted () {
+    this.scroll = new Bscroll(this.$refs.search)
   }
-};
+}
 </script>
 
 <style lang="stylus" scoped>

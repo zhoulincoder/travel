@@ -1,7 +1,7 @@
 <template>
   <ul class="list">
-    <li class="item" 
-      v-for="item of letters" 
+    <li class="item"
+      v-for="item of letters"
       :key="item"
       @click="handleLetterClick"
       @touchstart="handleTouchStart"
@@ -47,14 +47,14 @@ export default {
     },
     handleTouchMove (e) {
       // 增加节流
-      if(this.touchStatus) {
-        if(this.timer) {
+      if (this.touchStatus) {
+        if (this.timer) {
           clearTimeout(this.timer)
         }
         this.timer = setTimeout(() => {
           const touchY = e.touches[0].clientY - 79 // e.touches[0].clientY 触摸位置高度
           const index = Math.floor((touchY - this.startY) / 20)
-          if(index >= 0 && index < this.letters.length) {
+          if (index >= 0 && index < this.letters.length) {
             this.$emit('change', this.letters[index])
           }
         }, 16)

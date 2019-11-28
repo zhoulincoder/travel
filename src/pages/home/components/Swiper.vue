@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: "HomeSwiper",
+  name: 'HomeSwiper',
   props: {
     list: Array
   },
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  .wrapper >>> .swiper-pagination-bullet-active 
+  .wrapper >>> .swiper-pagination-bullet-active
     opacity .6
     background #ffffff
   .wrapper
@@ -40,6 +40,6 @@ export default {
     width 100%
     height 0
     padding-bottom 31.25%
-    .swiper-img 
+    .swiper-img
       width 100%
 </style>

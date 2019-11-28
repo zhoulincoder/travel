@@ -26,8 +26,8 @@ export default {
     ...mapState(['city']), // ?
     ...mapGetters(['doubleCity'])
   }
-  
-};
+
+}
 </script>
 
 <style lang="stylus" scoped>
@@ -62,6 +62,5 @@ export default {
       .arrow-icon
         margin-left .04rem
         font-size .24rem
-
 
 </style>

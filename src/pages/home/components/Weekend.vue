@@ -10,7 +10,7 @@
           <p class="item-title">{{item.title}}</p>
           <p class="item-desc">{{item.desc}}</p>
         </div>
-       
+
       </li>
     </ul>
   </div>
@@ -50,7 +50,5 @@ export default {
       line-height: .4rem
       ellipsis()
       color #cccccc
-    
-
 
 </style>

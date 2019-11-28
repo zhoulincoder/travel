@@ -60,13 +60,12 @@ export default {
   },
   watch: {
     letter () {
-      if(this.letter) {
+      if (this.letter) {
         const element = this.$refs[this.letter][0]
-        console.log(element);
-        
+        console.log(element)
+
         this.scroll.scrollToElement(element)
       }
-     
     }
   }
 }

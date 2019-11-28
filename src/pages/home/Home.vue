@@ -45,7 +45,7 @@ export default {
     getHomeInfoSucc (res) {
       console.log(res)
       res = res.data
-      if(res.ret && res.data) {
+      if (res.ret && res.data) {
         var data = res.data
         this.swiperList = data.swiperList
         this.iconList = data.iconList
@@ -59,14 +59,13 @@ export default {
     this.lastCity = this.city
   },
   activated () {
-    console.log('activated');
+    console.log('activated')
     if (this.lastCity !== this.city) {
       this.lastCity = this.city
       this.getHomeInfo()
     }
   }
 }
-
 
 </script>
 
