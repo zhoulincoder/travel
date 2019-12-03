@@ -23,10 +23,12 @@ export default {
       }
     }
   },
-  activated () {
+  mounted () {
     window.addEventListener('scroll', this.handleScroll)
   },
-  deactivated () {
+  beforeDestroy () {
+    console.log('aa')
+
     window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
