@@ -21,7 +21,7 @@ export default {
   data () {
     return {
       showGallary: false,
-      imgs: ['https://img1.qunarzz.com/p/tts8/1708/cf/3a4f35b9e4636502.jpg_r_1280x840x90_092cf7a8.jpg', 'https://img1.qunarzz.com/p/tts8/1708/cf/3a4f35b9e4636502.jpg_r_1280x840x90_092cf7a8.jpg']
+      imgs: ['http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_800x800_70debc93.jpg', 'http://img1.qunarzz.com/sight/p0/1709/76/7691528bc7d7ad3ca3.img.png_800x800_9ef05ee7.png']
     }
   },
   components: {
