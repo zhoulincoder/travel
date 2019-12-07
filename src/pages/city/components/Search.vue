@@ -80,38 +80,35 @@ export default {
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl';
 
-.search {
-  height: 0.72rem;
-  padding: 0 0.1rem;
-  background: $bgColor;
+.search
+  height: 0.72rem
+  padding: 0 0.1rem
+  background: $bgColor
 
-  .search-input {
-    box-sizing: border-box;
-    width: 100%;
-    height: 0.62rem;
-    line-height: 0.62rem;
-    padding: 0 0.3rem;
-    text-align: center;
-    border-radius: 0.06rem;
-    color: #666666;
-  }
-}
+  .search-input
+    box-sizing: border-box
+    width: 100%
+    height: 0.62rem
+    line-height: 0.62rem
+    padding: 0 0.3rem
+    text-align: center
+    border-radius: 0.06rem
+    color: #666666
 
-.search-content {
-  position: absolute;
-  overflow: hidden;
-  z-index: 1;
-  top: 1.58rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #eeeeee;
+.search-content
+  position: absolute
+  overflow: hidden
+  z-index: 1
+  top: 1.58rem
+  left: 0
+  right: 0
+  bottom: 0
+  background: #eeeeee
 
-  .search-item {
-    line-height: 0.62rem;
-    padding-left: 0.2rem;
-    background: #fff;
-    color: #666;
-  }
-}
+  .search-item
+    line-height: 0.62rem
+    padding-left: 0.2rem
+    background: #fff
+    color: #666
+
 </style>
